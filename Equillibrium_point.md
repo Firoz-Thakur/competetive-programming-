@@ -1,25 +1,5 @@
-//Given an array A of N positive numbers. The task is to find the position where equilibrium first occurs in the array. Equilibrium position in an array is a position such that the sum of elements before it is equal to the sum of elements after it.
-
-//The first line of input contains an integer T, denoting the number of test cases. Then T test cases follow. First line of each test case contains an integer N denoting the size of the array. Then in the next line are N space separated values of the array A.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int main() {
 	//code
 	int t;
