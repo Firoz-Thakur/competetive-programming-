@@ -1,5 +1,5 @@
-# competetive-programming-
-Code game 2.O
+#include <iostream>
+using namespace std;
 
 int main() {
 	//code
