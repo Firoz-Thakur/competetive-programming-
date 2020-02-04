@@ -1,15 +1,15 @@
 */An array is monotonic if it is either monotone increasing or monotone decreasing.
 
-An array A is monotone increasing if for all i <= j, A[i] <= A[j].  An array A is monotone decreasing if for all i <= j, A[i] >= A[j].
+//An array A is monotone increasing if for all i <= j, A[i] <= A[j].  An array A is monotone decreasing if for all i <= j, A[i] >= A[j].
 
-Return true if and only if the given array A is monotonic. 
+//Return true if and only if the given array A is monotonic. 
  
- Input: [6,5,4,4]
-Output: true
-Example 3:
+ //Input: [6,5,4,4]
+//Output: true
+//Example 3:
 
-Input: [1,3,2]
-Output: false
+//Input: [1,3,2]
+//Output: false
  */
  bool isMonotonic(vector<int>& A) {
         int flaga=0; //inc
