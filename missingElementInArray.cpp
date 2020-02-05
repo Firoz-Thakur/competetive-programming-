@@ -39,3 +39,34 @@ int main() {
 	}
 	return 0;
 }
+
+
+method 2.->
+	
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    long long int n;
+	    cin>>n;
+	    long long int ar[n];
+	    long long int sume=0;
+	    long long int sum=0;
+	    for(long long int i=0;i<n-1;i++)
+	    {
+	        cin>>ar[i];
+	       sume=sume^ar[i];
+	    }
+	     for(long long int i=1;i<=n;i++)
+	    {
+	        sum=sum^i;
+	    }
+	    cout<<(sum^sume)<<endl;
+	}
+	return 0;
+}
