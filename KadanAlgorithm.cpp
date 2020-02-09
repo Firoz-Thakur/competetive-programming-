@@ -1,4 +1,6 @@
- //kadan's algorithm
+ //kadan's algorithm  -->> use to find the maximum subarray sum.
+//array may contain positive as well as negative number.
+
  
  int main()
  {
