@@ -43,7 +43,7 @@ int maxLen(int ar[],int n)
       sum=sum+ar[i];
      // cout<<sum<<" ";
       if(sum==0)
-        len=i+1;  ///if the sum of the array become zero ,it will only possible form i=0 to i=j(any index)
+        len=i+1;    ///if the sum of the array become zero ,it will only possible form i=0 to i=j(any index),starting from the i=0 thats why i+1
       if(mp.count(sum))
       {
                if(len<(i-(mp[sum])))
