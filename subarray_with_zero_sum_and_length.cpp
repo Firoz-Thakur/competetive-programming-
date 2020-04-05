@@ -16,7 +16,7 @@ Yes
 bool subArrayExists(int arr[], int n)
 {
     //Your code here
-    map<int ,bool> mp; 
+    unorderd_map<int ,bool> mp; 
     int sum=0;
     for(int i=0;i<n;i++)
       {
@@ -34,7 +34,7 @@ bool subArrayExists(int arr[], int n)
 int maxLen(int ar[],int n)
 {
   //Your code here
-  map<int,int> mp;
+  unordered_map<int,int> mp;
   int sum=0;
   int len=0;
   int flag;
