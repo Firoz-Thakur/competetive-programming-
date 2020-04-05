@@ -37,9 +37,8 @@ int maxLen(int ar[],int n)
   unordered_map<int,int> mp;
   int sum=0;
   int len=0;
-  int flag;
   for(int i=0;i<n;i++)
-  {   flag=0;
+  {  
       sum=sum+ar[i];
      // cout<<sum<<" ";
       if(sum==0)
@@ -48,10 +47,10 @@ int maxLen(int ar[],int n)
       {
                if(len<(i-(mp[sum])))
                 len=i-(mp[sum]);
-                flag=1;   
+                
       }
-      if(flag==0)    // if the 15 15 15 are comming three times in the array we will only contain the first index of the element so that 
-             mp[sum]=i;                 //we can get maximum subarray length
+     else                   // if the 15 15 15 are comming three times in the array we will only contain the first index of the element so that 
+       mp[sum]=i;                 //we can get maximum subarray length
      
   }
   return len;
