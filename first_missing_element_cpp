@@ -1,0 +1,22 @@
+int missingNumber(int arr[], int n) { 
+    
+    // Your code here
+     int  ar[1000000]={0};
+    //int i;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>=0)
+          ar[arr[i]]++;
+    }
+   int H;
+   for(int j=1;j<1000000;j++)
+   {
+       if(ar[j]==0)
+        {
+            H=j;
+            break;
+            
+        }
+   }
+   return H;
+   
