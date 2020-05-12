@@ -39,7 +39,7 @@ int main() {
 	     cin>>ar[i];
 	    for(int i=1;i<n;i=i+2)
 	    {
-	        if(ar[i-1]>ar[i])   //if we want 1st element then we will change we will put condtion if(i>0 && ar[i-1]>ar[i])
+	        if(ar[i-1]>ar[i])   //if we want 1st element then we will change we will put condtion if(i>0 && ar[i-1]>ar[i],and i will be ff from 0))
 	         swap(ar[i],ar[i-1]);
 	        if(ar[i+1]>ar[i] && i<n-1)
 	         swap(ar[i+1],ar[i]);
