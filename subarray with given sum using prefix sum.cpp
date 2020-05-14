@@ -63,3 +63,51 @@ void subarraySum(int arr[], int n, int s){
  else if(flag==0)
   cout<<"-1";
 }
+
+approach 2 :
+we need to use Sliding window Method to solve this Problem.
+
+Add the elements, to currsum till it is less than S. If it becomes more than S, start deleting elements from start in the cuusum. 
+    if the currsum again becomes less than S, again start adding elements to it. In between also check, if the currsum becomes equal
+    to S.
+If yes, then output start and end index, else after traversing array no such solution is found, output -1.
+
+The complete solution is in next hint.
+
+
+
+
+
+void subarraySum(int ar[], int n, int s){
+    // Your code he 
+    int i=0;
+    int j=0;
+    int cursum=0;
+    int flag=0;
+    while(true)
+    {
+        if(cursum+ar[j]==s)
+        {
+            cout<<i+1<<" "<<j+1;
+            flag=1;
+            break;
+        }
+       else if(cursum+ar[j]>s)
+       {
+           
+           cursum=cursum-ar[i];
+           i++;
+       }
+      else
+      {
+          cursum=cursum+ar[j];
+          j++;
+      }
+      
+    if(i==n || j==n)
+     break;
+    }
+    if(flag==0)
+     cout<<"-1";
+}
+
