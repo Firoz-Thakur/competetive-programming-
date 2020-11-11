@@ -1,20 +1,39 @@
  //kadan's algorithm  -->> use to find the maximum subarray sum.
 //array may contain positive as well as negative number.
-
+https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1#
  
- int main()
- {
-      int sofar=ar[0];
-	    int cur=ar[0];
-	    for(long long int i=1;i<n;i++)
-	    {  
-	       if(cur<0)   //for test case like -2,5,-1
-	        cur=0;
-	       if(cur+ar[i]<0)       //if cur is less than that is worthless ,better make it zero
-	        cur=0;
-	       else if((cur+ar[i])>sofar)   //if current sum is more than old one updarte it to new.
-	         sofar=cur+ar[i];
-	       cur=cur+ar[i];
-	    }
-	    cout<<sofar<<endl;
-      }
+ int maxSubarraySum(int ar[], int n){
+    
+    // Your code her
+  int sum=0;
+  int best=0;
+  
+  int f=0;
+  for(int i=0;i<n;i++)
+  {
+    if(sum+ar[i]<0)
+     sum=0;
+    else 
+    {  
+        sum=sum+ar[i];
+        best=max(sum,best);
+        f=1;
+    }
+        
+  }
+  if(f==0)
+  {
+      return *max_element(ar,ar+n);
+  }
+  return best;
+ 
+}
+
+
+
+
+
+
+
+
+
